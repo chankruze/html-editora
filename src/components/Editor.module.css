@@ -1,0 +1,48 @@
+/*
+Author: chankruze (chankruze@geekofia.in)
+Created: Mon Nov 23 2020 08:52:49 GMT+0530 (India Standard Time)
+
+Copyright (c) Geekofia 2020 and beyond
+*/
+
+.editor_container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.25rem 0 0.25rem;
+  min-width: 140px;
+}
+
+.editor_container.collapsed {
+  flex-grow: 0;
+}
+
+.editor_title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  background: rgb(22, 22, 22);
+}
+
+.editor_title button {
+  border: 0;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.editor_title button svg {
+  font-size: 1.3rem;
+}
+
+.code_mirror_wrapper {
+  flex-grow: 1;
+  flex-basis: 0;
+  overflow: hidden;
+}
